@@ -4,7 +4,7 @@ sidebarTitle: "Exporting"
 description: "Export your timeline as a vector SVG or raster PNG. Exported files are clean and presentation-ready — no hover icons or editing controls."
 ---
 
-When your timeline is ready to share, Timeline Maker can export it as a vector SVG or a raster PNG directly from your browser — no server required. Both formats render the full timeline cleanly: hover icons, edit controls, and delete buttons are all hidden in the export, giving you a polished, presentation-ready image. The Inter font used in the app is embedded correctly in both formats so text renders consistently wherever you open or present the file.
+When your timeline is ready to share, Timeline Maker can export it as a vector SVG or a raster PNG directly from your browser — no server required. Both formats render the full timeline cleanly: hover icons, edit controls, and delete buttons are all hidden in the export, giving you a polished, presentation-ready image. Both formats declare Inter as the preferred typeface; text renders in Inter on any system where that font is installed, and falls back gracefully to similar system fonts where it is not.
 
 ## How to Export Your Timeline
 
@@ -41,10 +41,10 @@ When your timeline is ready to share, Timeline Maker can export it as a vector S
     - Presentations where you need to enlarge a slide or print at high resolution
     - Archiving a timeline when you may want to edit the graphic later
 
-    **How it works:** Clicking `Download SVG` exports the current timeline view directly. The file is a standard `.svg` text file containing the vector paths, text, and embedded font data.
+    **How it works:** Clicking `Download SVG` exports the current timeline view directly. The file is a standard `.svg` text file containing the vector paths, text, and font-family declarations.
   </Tab>
   <Tab title="PNG">
-    PNG (Portable Network Graphics) is a raster format — it stores the image as a fixed grid of pixels. The exported PNG is rendered at the timeline's natural canvas width, so it is high resolution for typical use.
+    PNG (Portable Network Graphics) is a raster format — it stores the image as a fixed grid of pixels. The exported PNG is rendered at twice the timeline's natural canvas size (2× scale), so it is sharp and high resolution for typical use.
 
     **Best for:**
     - Embedding in Word documents, Google Docs, or PDF reports
@@ -52,7 +52,7 @@ When your timeline is ready to share, Timeline Maker can export it as a vector S
     - Inserting into PowerPoint or Google Slides when SVG is not supported
     - Sharing with stakeholders who need a simple image file they can open anywhere
 
-    **How it works:** Clicking `Download PNG` renders the SVG to an HTML canvas element at full resolution first, then converts the canvas to a `.png` file for download. This extra step means the download may take a moment longer than SVG for very wide timelines.
+    **How it works:** Clicking `Download PNG` renders the SVG to an HTML canvas element at 2× scale first, then converts the canvas to a `.png` file for download. This extra step means the download may take a moment longer than SVG for very wide timelines.
   </Tab>
 </Tabs>
 
@@ -60,7 +60,7 @@ When your timeline is ready to share, Timeline Maker can export it as a vector S
 
 - **No editing UI** — Hover icons (edit pencils, delete buttons) are stripped from exports. The file shows only your timeline content.
 - **Full width render** — The exported file is as wide as the timeline's date range. Wider date ranges produce wider files.
-- **Embedded font** — The Inter typeface is embedded so text looks correct even on systems without Inter installed.
+- **Font declaration** — Both formats declare Inter as the preferred typeface. Text renders in Inter where it is installed; systems without Inter use a similar sans-serif fallback.
 - **No account needed** — Exports happen entirely in your browser. Nothing is sent to a server.
 
 ## What's Next

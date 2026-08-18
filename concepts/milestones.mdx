@@ -1,5 +1,5 @@
 ---
-title: "Milestones: Dates, Owners, and Statuses Explained"
+title: "Milestones: Dates, Owners, Statuses, and Visual Signals"
 sidebarTitle: "Milestones"
 description: "A milestone is a named event with a date, owner, and status. Learn how milestones are represented on the timeline and how to interact with them."
 ---
@@ -8,31 +8,27 @@ A milestone is the core unit of work in Timeline Maker. It represents a named ev
 
 ## Milestone Fields
 
-When you open the milestone dialog to create or edit a milestone, you have access to the following fields.
+Each milestone has five fields. Some are editable directly on the SVG axis or in the list editor; others are only accessible from the milestone dialog.
 
 <Accordion title="Title">
-  The display name of the milestone. It appears as a label on the SVG axis and in the Name column of the list editor. Click the label directly on the timeline to edit it inline without opening the full dialog.
+  The display name of the milestone. It appears as a label on the SVG axis and in the Milestone column of the list editor. Edit it inline on the axis by clicking the label, update it in the list editor's title input, or change it inside the milestone dialog.
 </Accordion>
 
 <Accordion title="Date">
-  The date — and optionally the time — the milestone is scheduled to occur. The date positions the milestone marker on the SVG axis. Enable **time mode** in the control panel if you need sub-day precision.
+  The date — and optionally the time — the milestone is scheduled to occur. The date positions the milestone marker on the SVG axis. Drag the marker left or right on the axis to reschedule it, or type a new value in the Date column of the list editor. Enable **time mode** in the control panel if you need sub-day precision.
 </Accordion>
 
 <Accordion title="Owner">
-  A person selected from the shared people list for this timeline. The owner's avatar or initials appear alongside the milestone marker on the axis and in the Owner column of the list editor.
+  A person selected from the shared people list for this timeline. The owner's avatar or initials appear alongside the milestone marker on the axis and in the Owner column of the list editor. Assign or change the owner in the list editor or inside the milestone dialog.
 </Accordion>
 
 <Accordion title="Status">
-  One of four values — Planned, In Progress, Completed, or Overdue — that communicates the current state of the milestone. See [Milestone Statuses](/reference/milestone-statuses) for the full color and behavior reference.
+  One of four states — Planned, In Progress, Completed, or Overdue — that communicates the current state of the milestone. Change the status using the Status dropdown in the list editor, or click the status marker icon on the SVG axis to open the status menu. See [Milestone Statuses](/reference/milestone-statuses) for the full color and behavior reference.
 </Accordion>
 
 <Accordion title="Details">
-  A free-text field available inside the milestone dialog for notes, context, or acceptance criteria. Use it to store any supporting information that does not fit in the title.
+  A free-text field for notes, context, or acceptance criteria. Available only inside the milestone dialog — open it by clicking the edit icon that appears when you hover over a milestone on the axis, or by clicking the edit button in the list editor. Details keep the timeline view clean while keeping supporting information a click away.
 </Accordion>
-
-<Tip>
-  The Details field is the right place for richer context — links to specs, acceptance criteria, or background notes. It is only visible inside the milestone dialog, so it keeps the timeline view clean while still being a click away.
-</Tip>
 
 ## Milestone Statuses
 
