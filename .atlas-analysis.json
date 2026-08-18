@@ -1,0 +1,84 @@
+{
+  "projectType": "frontend",
+  "projectName": "Timeline Maker",
+  "projectDescription": "A lightweight, browser-based milestone timeline planner with risk tracking, team member management, and SVG/PNG export — no installation required.",
+  "theme": "almond",
+  "primaryColor": "#040404",
+  "lightColor": "#7c7c7c",
+  "darkColor": "#d3d3d3",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/timelines",
+              "concepts/milestones",
+              "concepts/risks",
+              "concepts/team-members"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/managing-timelines",
+              "guides/editing-milestones",
+              "guides/tracking-risks",
+              "guides/exporting"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/milestone-statuses",
+              "reference/keyboard-shortcuts",
+              "reference/data-storage"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Create and manage multiple saved timelines in the browser",
+    "Add, edit, drag-to-reschedule, and delete milestones on an interactive SVG timeline",
+    "Track milestone statuses: Planned, In Progress, Completed, and Overdue",
+    "Attach risks to milestones with owner assignment, mitigation state, and per-risk update history",
+    "Shared team member list with initials, Gravatar email lookup, or uploaded avatar photos",
+    "Optional time specification mode for precise scheduling",
+    "Configurable timeline date range with optional current-date marker",
+    "Download timelines as SVG or PNG files",
+    "Auto-stacking label rows to prevent overlap on crowded timelines",
+    "Light gray weekend bands and Monday-aligned date axis ticks",
+    "Browser-local data persistence — no account or server required"
+  ],
+  "publicApiSurface": [
+    "Add Milestone (control panel button / list footer button / timeline axis click)",
+    "Edit Milestone (click title or marker in timeline / row edit icon / milestone dialog)",
+    "Drag Milestone Marker (reschedule by dragging on timeline axis)",
+    "Delete Milestone (hover delete icon on timeline or row)",
+    "Sort Milestones by Date",
+    "Set Milestone Status (Planned / In Progress / Completed)",
+    "Add / Edit / Delete Risk on a Milestone",
+    "Set Risk Status (Open / Resolved)",
+    "Add Risk Update entry",
+    "Add / Edit Team Member (name, email, avatar upload or Gravatar)",
+    "Create / Duplicate / Delete / Rename Timeline",
+    "Set Current Date (date input or 'Now' button)",
+    "Set Timeline Date Range (start/end inputs or 'Auto')",
+    "Toggle Current-Date Marker visibility",
+    "Toggle Time Specification mode",
+    "Download SVG",
+    "Download PNG",
+    "Reset to Sample Data"
+  ]
+}
